@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại học Bách khoa Hà Nội - HUST</title>
+    
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Font chữ Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Thư viện Icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. Màn hình chờ (Preloader) -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. Thanh điều hướng (Navbar) -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span class="hust-text">HUST</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#stats">Thành tựu</a></li>
+            <li><a href="#academics">Đào tạo</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- 3. Hero Section (Phần đầu trang) -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="slide-down">Đại học Bách khoa Hà Nội</h1>
+            <p id="typing-text" class="typing-container"></p>
+            <a href="#about" class="btn pulse-btn">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <!-- 4. Giới thiệu -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Tự hào Bách Khoa</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Đại học Bách khoa Hà Nội (HUST) là ngọn cờ đầu trong hệ thống giáo dục đại học Việt Nam. Với bề dày truyền thống, HUST không chỉ là nơi đào tạo ra những kỹ sư xuất sắc mà còn là trung tâm nghiên cứu khoa học, chuyển giao công nghệ hàng đầu khu vực.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTIDfqpySGNIB0TVj2fzr8er6YPdh6kL_3CA&s" alt="HUST Campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Bộ đếm số liệu -->
+    <section id="stats" class="stats-section reveal">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3 class="counter" data-target="67">0</h3>
+                <p>Năm lịch sử</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-users"></i>
+                <h3 class="counter" data-target="35000">0</h3>
+                <p>Sinh viên</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-book-open"></i>
+                <h3 class="counter" data-target="130">0</h3>
+                <p>Chương trình đào tạo</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-award"></i>
+                <h3 class="counter" data-target="1">0</h3>
+                <p>Đại học Kỹ thuật số 1 VN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Đào tạo (Các thẻ ngành học) -->
+    <section id="academics" class="section bg-light reveal">
+        <div class="container">
+            <h2 class="section-title">Lĩnh vực Mũi nhọn</h2>
+            <div class="grid-container">
+                <!-- Thẻ CNTT -->
+                <div class="card" data-major="it">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Công nghệ Thông tin</h3>
+                    <p>AI, Khoa học Dữ liệu, An toàn không gian mạng và Kỹ thuật phần mềm chuẩn quốc tế.</p>
+                    <button class="btn-detail">Xem chương trình <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Thẻ Cơ khí -->
+                <div class="card" data-major="me">
+                    <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Cơ khí - Tự động hóa</h3>
+                    <p>Nghiên cứu chế tạo Robot, Cơ điện tử và hệ thống điều khiển tự động công nghiệp.</p>
+                    <button class="btn-detail">Xem chương trình <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Thẻ Điện tử -->
+                <div class="card" data-major="ee">
+                    <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Điện - Điện tử</h3>
+                    <p>Thiết kế vi mạch (IC), Viễn thông và Năng lượng tái tạo hướng tới tương lai.</p>
+                    <button class="btn-detail">Xem chương trình <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Liên hệ -->
+    <section id="contact" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Kết nối với chúng tôi</h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Họ và tên" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <textarea id="message" rows="5" placeholder="Bạn muốn hỏi gì..." required></textarea>
+                <button type="submit" class="btn btn-block">Gửi thông điệp <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>HUST - Khát vọng vươn lên</h2>
+            <p>Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Template created for HUST.</p>
+        </div>
+    </footer>
+
+    <!-- 9. Khối Modal Popup hiển thị môn học (Ẩn mặc định) -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <h3 id="modal-title" class="modal-title">Chương trình học</h3>
+            <div class="table-responsive">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Mã HP</th>
+                            <th>Tên học phần</th>
+                            <th>Tín chỉ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modal-tbody">
+                        <!-- Dữ liệu sẽ được JS bơm vào đây -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút Lên đầu trang -->
+    <a href="#" id="back-to-top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Liên kết file JS -->
+    <script src="/assets/script/main.js"></script>
+</body>
+</html>
